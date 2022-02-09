@@ -1,0 +1,531 @@
+.page {
+  &__hero {
+    position: relative;
+    height: 650px;
+
+    &__content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      justify-content: center;
+      height: inherit;
+      padding: 0 15%;
+      color: $primary;
+      margin: 0;
+
+      p:first-child {
+        font-weight: 400;
+        font-family: $font-cursive;
+        font-size: 1em;
+      }
+
+      p {
+        font-size: 1.5em;
+        letter-spacing: 0.025em;
+      }
+
+      h1 {
+        font-weight: 90px;
+        font-size: 3.5em;
+        font-family: "Poppins", sans-serif;
+        color: $primary;
+      }
+
+      &__btn {
+        margin: 0;
+
+        button {
+          margin-top: 1.5em;
+          margin-right: 1em;
+          background: transparent;
+          color: $primary;
+          border: 1px solid #b9b9b9;
+          border-radius: 5px;
+        }
+
+        button:nth-child(2) {
+          color: $primary;
+          border: none;
+          font-weight: bold;
+
+          img {
+            margin-right: 0.3em;
+          }
+        }
+
+        button:hover {
+          background: transparent;
+        }
+
+        button:focus {
+          outline: none;
+          box-shadow: none;
+          background: transparent;
+        }
+      }
+    }
+
+    svg {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 999;
+    }
+  }
+
+  &__hero::before {
+    content: "";
+    background-image: url("../images/green-chair.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(0.3) opacity(0.9);
+    width: 100%;
+    height: 650px;
+  }
+
+  &__focus {
+    width: 100%;
+    margin: 100px 0;
+    padding: 0 15%;
+    background: $primary;
+
+    p {
+      color: $secondary;
+      font-family: $font-cursive;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 50px;
+      text-align: center;
+    }
+
+    &__box {
+      width: 100%;
+      margin: 100px 0;
+      display: flex;
+      justify-content: space-between;
+
+      &__customer {
+        position: relative;
+        width: 32%;
+        height: 200px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 2em;
+        h3 {
+          color: $primary;
+          z-index: 999;
+          letter-spacing: 0.04em;
+          font-size: 1.7em;
+        }
+
+        p {
+          font-family: $font-default;
+          color: $primary;
+          z-index: 999;
+          font-size: 1em;
+        }
+
+        button {
+          z-index: 999;
+          color: $text-color;
+          background: $primary;
+          border: none;
+          border-radius: 10px;
+          padding: 0.7em;
+          letter-spacing: 0.025em;
+          margin-top: 0.7em;
+          font-size: 0.9em;
+        }
+
+        button:visited, :hover, :focus {
+          color: $text-color;
+          background: $primary;
+          box-shadow: none;
+        }
+      }
+
+      &__customer::before {
+        content: "";
+        background-image: url("../images/customer.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        border-radius: 5px;
+        filter: brightness(0.5);
+      }
+
+      &__content {
+        position: relative;
+        width: 32%;
+        height: 200px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 2em;
+        h3 {
+          color: $primary;
+          z-index: 999;
+          letter-spacing: 0.04em;
+          font-size: 1.7em;
+        }
+
+        p {
+          font-family: $font-default;
+          color: $primary;
+          z-index: 999;
+          font-size: 1em;
+        }
+
+        button {
+          z-index: 999;
+          color: $text-color;
+          background: $primary;
+          border: none;
+          border-radius: 10px;
+          padding: 0.7em;
+          letter-spacing: 0.025em;
+          margin-top: 0.7em;
+          font-size: 0.9em;
+        }
+
+        button:visited, :hover, :focus {
+          color: $text-color;
+          background: $primary;
+          box-shadow: none;
+        }
+      }
+
+      &__content::before {
+        content: "";
+        background-image: url("../images/content.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        border-radius: 5px;
+        filter: brightness(0.5);
+      }
+
+      &__touchpoints {
+        position: relative;
+        width: 32%;
+        height: 200px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 2em;
+        h3 {
+          color: $primary;
+          z-index: 999;
+          letter-spacing: 0.04em;
+          font-size: 1.7em;
+        }
+
+        p {
+          font-family: $font-default;
+          color: $primary;
+          z-index: 999;
+          font-size: 1em;
+        }
+
+        button {
+          z-index: 999;
+          color: $text-color;
+          background: $primary;
+          border: none;
+          border-radius: 10px;
+          padding: 0.7em;
+          letter-spacing: 0.025em;
+          margin-top: 0.7em;
+          font-size: 0.9em;
+        }
+
+        button:visited, :hover, :focus {
+          color: $text-color;
+          background: $primary;
+          box-shadow: none;
+        }
+      }
+
+      &__touchpoints::before {
+        content: "";
+        background-image: url("../images/touchpoints.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        border-radius: 5px;
+        filter: brightness(0.5);
+      }
+    }
+  }
+
+  &__technologies {
+    padding: 0 15%;
+
+    &__image {
+      display: block;
+      margin: auto;
+      img {
+        width: 100%;
+      }
+    }
+
+    &__info {
+      p {
+        color: $secondary;
+        font-family: $font-cursive;
+      }
+
+      h3 {
+        font-size: 40px;
+      }
+
+      p:nth-of-type(2) {
+        font-family: $font-default;
+        color: $text-color;
+        font-size: 1em;
+      }
+
+      ul {
+        list-style-type: none;
+        li {
+          margin-top: 2.5em;
+          span {
+            display: flex;
+
+            svg {
+              color: $text-color;
+            }
+
+            h4 {
+              padding-left: 1em;
+              font-size: 1em;
+              font-weight: 600;
+            }
+          }
+
+          p {
+            font-family: $font-default;
+            color: $text-color;
+            font-size: 1em;
+            padding-left: 2em;
+          }
+        }
+      }
+    }
+  }
+
+  &__news {
+
+    width: 100%;
+    margin: 100px 0;
+    padding: 0 15%;
+    background: $primary;
+
+    p {
+      color: $secondary;
+      font-family: $font-cursive;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 50px;
+      text-align: center;
+    }
+
+    &__cards {
+      margin: 100px 0;
+
+      .card-group {
+        justify-content: space-between;
+        .card {
+          flex: 32% !important;
+          max-width: 32%;
+          border: none;
+          padding-right: 0.15em;
+          margin-bottom: 2em;
+  
+          img {
+            width: inherit;
+            height: 300px;
+            object-fit: cover;
+          }
+  
+          .card-body {
+            padding-left: 0;
+          }
+  
+          .card-title {
+            font-size: 80%;
+            color: $text-color;
+            font-weight: 400;
+            font-family: $font-default;
+          }
+  
+          .card-text:hover {
+            color: $secondary;
+            transition-duration: 0.3s;
+          }
+  
+          .card-text {
+            font-family: $font-headline;
+            color: $headline-color;
+            font-weight: bold;
+            text-align: start;
+            font-size: 1.5em;
+            letter-spacing: 0.025em;
+          }
+  
+          .card-footer {
+            padding-left: 0;
+            border: none;
+            color: $text-color;
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .page {
+    &__hero {
+      height: 550px;
+      &__content {
+        justify-content: center;
+        padding-top: 2em;
+        h1 {
+          font-size: 3em;
+        }
+
+        p {
+          font-size: 1.2em;
+        }
+
+        p:first-child {
+          font-size: 1em;
+        }
+
+        &__btn {
+          justify-content: center;
+          button:nth-child(2) {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+
+    &__hero::before {
+      content: "";
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      filter: brightness(0.3) opacity(0.9);
+      width: 100%;
+      height: 550px;
+    }
+
+    &__focus {
+      p {
+        font-size: 0.8em;
+      }
+
+      h2 {
+        font-size: 2.2em;
+      }
+      &__box {
+        width: 100%;
+        display: block;
+        margin: 2em 0;
+
+        &__customer,
+        &__content,
+        &__touchpoints {
+          width: 100%;
+        }
+
+        &__content,
+        &__touchpoints {
+          margin-top: 1em;
+        }
+      }
+    }
+
+    &__technologies {
+      .row {
+            display: flex;
+    flex-direction: column;
+      }
+      &__info {
+        margin-top: 1em;
+        p:nth-of-type(1) {
+          font-size: 0.8em;
+          text-align: center;
+        }
+
+        h3 {
+          font-size: 2.2em;
+        }
+
+        ul {
+          padding-left: 0;
+          li {
+            p {
+              padding-left: 2.5em;
+            }
+          }
+        }
+      }
+    }
+
+    &__news {
+      p {
+        font-size: 0.8em;
+      }
+
+      h2 {
+        font-size: 2.2em;
+      }
+      &__cards{
+        .card-group {
+          .card {
+            flex: 100% !important;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

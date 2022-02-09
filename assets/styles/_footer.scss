@@ -1,0 +1,90 @@
+.component {
+    padding: 50px 0 0;
+      box-shadow: -15px -8px 10px rgb(0 0 0 / 10%);
+  
+    &__content {
+      margin: 50px 15%;
+  
+      &__contact {
+        span:first-child {
+          font-family: $font-cursive;
+          color: $secondary;
+          font-weight: 400;
+          letter-spacing: 0.02em;
+          display: block;
+        }
+  
+        span:nth-child(2) {
+          font-family: $font-headline;
+          font-weight: 600;
+          font-size: 1.8em;
+          color: $text-color;
+          letter-spacing: 0.025em;
+        }
+  
+        span:last-child {
+          font-family: $font-headline;
+          font-weight: 900;
+          font-size: 2.3em;
+          color: #000;
+          letter-spacing: 0.025em;
+        }
+      }
+  
+      &__resources {
+        h5 {
+          font-weight: 600;
+          margin-bottom: 2em;
+        }
+  
+        p {
+          font-weight: 500;
+          font-size: 1em;
+          color: $text-color;
+          letter-spacing: 0.02em;
+        }
+      }
+  
+      &__info {
+        h5 {
+          font-weight: 600;
+          margin-bottom: 2em;
+        }
+  
+        span {
+          font-weight: 200 !important;
+          color: #9b9b9b;
+          letter-spacing: 0.02em;
+          font-size: 0.8em;
+        }
+  
+        &__left {
+          padding-left: 1.5em;
+        }
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .component {
+      &__content {
+        display: block;
+        margin: 50px 5%;
+  
+        &__contact {
+          span:first-child {
+            font-size: 0.8em;
+          }
+        }
+  
+        &__resources,
+        &__info {
+          margin-top: 2em;
+  
+          h5 {
+            margin-bottom: 1em;
+          }
+        }
+      }
+    }
+  }
